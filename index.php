@@ -165,7 +165,6 @@ border:1px solid #ccc;
 <?php if($page=="home"){ ?>
 
 <marquee><h1>Welcome To Government Polytechnic Pillaripattu</h1></marquee>
-<marquee><h1>Welcome To Government Polytechnic Pillaripattu</h1></marquee>
 
 
 <div class="card">
