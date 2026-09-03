@@ -50,7 +50,7 @@ if(isset($_POST['register']))
     )";
 
     if($conn->query($sql))
-    {
+    {  
         echo "<script>alert('Registration Successful');location='?page=login';</script>";
     }
     else
@@ -164,6 +164,7 @@ border:1px solid #ccc;
 
 <?php if($page=="home"){ ?>
 
+<marquee><h1>Welcome To Government Polytechnic Pillaripattu</h1></marquee>
 <marquee><h1>Welcome To Government Polytechnic Pillaripattu</h1></marquee>
 
 
