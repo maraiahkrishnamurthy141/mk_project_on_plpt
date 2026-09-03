@@ -50,7 +50,7 @@ if(isset($_POST['register']))
     )";
 
     if($conn->query($sql))
-    {
+    {  
         echo "<script>alert('Registration Successful');location='?page=login';</script>";
     }
     else
