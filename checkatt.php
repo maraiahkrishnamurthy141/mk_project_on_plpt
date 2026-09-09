@@ -89,8 +89,8 @@ if($result->num_rows > 0){
             <td>Date</td>
             <td>".$row['attendance_date']."</td>
           </tr>";  
-    echo "<tr>
-            <td>status</td>
+    echo "<tr>                                  
+            <td>status</td>     
             <td>".$row['status']."</td>
           </tr>";          
 

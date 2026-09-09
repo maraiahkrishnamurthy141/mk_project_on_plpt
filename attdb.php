@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $username = "root";
-$password = "";
-$database = "diploma_attendance";
+$password = "Murthy@0252009";
+$database = "college_3";
 
 $conn = new mysqli($host, $username, $password, $database);
 
