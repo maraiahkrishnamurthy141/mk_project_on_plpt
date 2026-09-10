@@ -2,11 +2,11 @@
 session_start();
 
 /* DATABASE CONNECTION */
-$conn = new mysqli("localhost","root","","college_3");
+$conn = new mysqli("localhost","root","Murthy$0252009","college_3");
 
 if($conn->connect_error){
     die("Connection Failed");
-}  
+}
 
 $page = $_GET['page'] ?? 'home';
 
@@ -19,7 +19,8 @@ if(isset($_POST['register']))
     $pinno = $_POST['pinno'];
     $email = $_POST['email'];
     $mobile_no = $_POST['mobile_no'];
-    $branch = $_POST['branch']; 
+    $branch = $_POST['branch'];
+
     $mother_name = $_POST['mother_name'];
     $father_name = $_POST['father_name'];
     $guardian_relation = $_POST['guardian_relation'];
@@ -49,7 +50,7 @@ if(isset($_POST['register']))
     )";
 
     if($conn->query($sql))
-    {
+    {  
         echo "<script>alert('Registration Successful');location='?page=login';</script>";
     }
     else
@@ -162,8 +163,10 @@ border:1px solid #ccc;
 <div class="container">
 
 <?php if($page=="home"){ ?>
-<img src="\sbtet_logo.jpg" alt="Logo" style="width:150px;height:150px;"><br><br>
-<marquee><h1>Welcome</h1></marquee>
+
+<img src="images/logo_2.png" alt="SBTET Logo" width="200">
+<img src="images/plpt.jpeg" alt="SBTET Logo" width="200">
+<marquee><h1>Welcome To Government Polytechnic Pillaripattu</h1></marquee>
 
 
 <div class="card">
@@ -175,11 +178,11 @@ border:1px solid #ccc;
 <a href="view_attendance.php"><button>View Attendance</button></a>
 <a href="#"><button>Placement & Training</button></a>
 <a href="feedback.html"><button>Feedback</button></a>
-<a href="#"><button>Fee</button></a>
-</div><br></br>
+<a hrefs="#"><button>Fee</button></a>
+</div><br></br>                       
 <a href="https://sbtet.ap.gov.in"><button style="background-color: pink;color:black";>Click here to visit SBTET Official Website</button></a>
 <a href="https://apsbtet.rnits.technology/"><button style="background-color: pink;color:black";>Click here to visit SBTET Amaaa login</button></a>
-
+ 
 
 <?php } ?>
 
