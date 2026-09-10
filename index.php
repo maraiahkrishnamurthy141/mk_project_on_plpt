@@ -2,7 +2,7 @@
 session_start();
 
 /* DATABASE CONNECTION */
-$conn = new mysqli("localhost","root","Murthy$0252009","college_3");
+$conn = new mysqli("localhost","root","","college_3");
 
 if($conn->connect_error){
     die("Connection Failed");
